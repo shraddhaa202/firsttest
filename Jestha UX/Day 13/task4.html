@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: lightblue;
+            align-content:center ;
+            margin-top: 50%;
+            margin-bottom: 50%;
+        }
+        .loading{
+            display: block;
+            margin: 50px auto;
+            width: 80px;
+            height: 20px;
+            position: relative;
+
+        }
+        .loading span {
+            animation: infinite;
+        }
+        .loading .one{
+            position: absolute;
+            left: 0;
+            background: orange;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation-delay: .2s;
+        }
+        .loading .two{
+            position: absolute;
+            left: 23px;
+            background: orange;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation-delay: .2s;
+        }
+
+        .loading .three{
+            position: absolute;
+            left: 46px;
+            background: orange;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation-delay: .4s;
+        }
+        
+        @keyframes loading{
+
+            0%,100%{
+               transform: scale(1);
+            }
+            50%{
+                transform: scale(.5);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loading"> 
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+    </div>
+</body>
+</html>

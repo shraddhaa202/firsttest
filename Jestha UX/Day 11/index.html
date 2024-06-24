@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox task</title>
+    <style>
+        header{
+            height: 50px;
+            background-color:lightseagreen ;
+            text-align: center;
+            align-content: center;
+    
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            /* background-color:orange; */
+        }
+
+        aside{
+            height: 100%;
+            background-color: green;
+            width: 30%;
+            text-align: center;
+            align-content: center;
+        }
+        .article{
+            width: 60%;
+            background-color:orange;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: end;
+            padding: 2rem;
+
+        }
+
+        .image{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        footer{
+            height: 50px;
+            background-color:lightseagreen ;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>Header</header>
+
+<main>
+    <aside>Aside</aside>
+    
+        <div class="article">
+        <div class="image">Image</div>
+        <div class="image">Image</div>
+        <div class="image">Image</div>
+        </div>
+    
+</main>
+
+<footer>Footer</footer>
+
+
+
+
+
+</body>
+</html>

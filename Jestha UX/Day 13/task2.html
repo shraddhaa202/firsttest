@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annimation</title>
+    <style>
+        .box{
+            margin-top: 50%;
+            margin-bottom: 50%;
+            height: 50px;
+            text-align: center;
+           /* width: 100px; */
+           /* box-sizing: border-box; */
+           border:1px solid black;
+           border-radius: 100px;
+           /* align-items: center; */
+           background-color: black; 
+           animation-name: colorchange;
+           animation-duration: 3s;
+           position: relative;
+           animation-iteration-count: infinite;
+        }
+    
+         @keyframes colorchange{
+            0%{
+                background-color: red;
+                width:10%;
+            }
+            25%{
+                background-color: rgb(255, 217, 0);
+                width: 25%;
+            }
+            50%{
+                background-color: rgb(235, 6, 185);
+                width: 50%;
+            }
+            75%{
+                background-color: rgb(38, 230, 0);
+                width:75% ;
+            }
+            100%{
+                background-color: rgb(0, 136, 255);
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Loading</div>
+</body>
+</html>
